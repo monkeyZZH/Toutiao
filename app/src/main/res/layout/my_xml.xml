@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/mainBackground"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frament"
+        android:background="?attr/mainBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        ></FrameLayout>
+
+
+    <RadioGroup
+        android:background="?attr/mainBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/shouye"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector01"
+            android:checked="true"
+            android:textColor="@color/cheng"
+            android:text="首页"
+            android:textSize="13sp"
+            android:onClick="SY"
+            />
+
+        <RadioButton
+            android:id="@+id/xigua"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector02"
+            android:text="西瓜视频"
+            android:textSize="13sp"
+            android:textColor="@color/hei"
+            android:onClick="XG"
+            />
+        <RadioButton
+            android:id="@+id/weitou"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector03"
+            android:text="微头条"
+            android:textColor="@color/hei"
+            android:textSize="13sp"
+            android:onClick="WT"
+            />
+        <RadioButton
+            android:id="@+id/wode"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:textColor="@color/hei"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector04"
+            android:text="未登录"
+            android:textSize="13sp"
+            android:onClick="WD"
+            />
+    </RadioGroup>
+
+
+
+</LinearLayout>
